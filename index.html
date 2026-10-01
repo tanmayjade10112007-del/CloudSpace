@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudSpace | Cloud Computing Learning Hub</title>
+  <meta name="description" content="CloudSpace is a modern cloud computing learning hub.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="#" class="logo"><span>☁</span> CloudSpace</a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#models">Cloud Models</a>
+      <a href="#about">About</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">☾</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="badge">☁ CLOUD COMPUTING LEARNING HUB</div>
+        <h1>Build. Learn.<br><span>Cloud Smarter.</span></h1>
+        <p>Explore cloud computing concepts, service models and deployment options through one simple, interactive learning space.</p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#features">Explore CloudSpace →</a>
+          <a class="btn secondary" href="#models">View Models</a>
+        </div>
+        <div class="stats">
+          <div><strong>3</strong><span>Service Models</span></div>
+          <div><strong>3</strong><span>Deployment Models</span></div>
+          <div><strong>24/7</strong><span>Cloud Access</span></div>
+        </div>
+      </div>
+      <div class="cloud-art" aria-label="Cloud computing illustration">
+        <div class="orb orb1"></div><div class="orb orb2"></div><div class="orb orb3"></div>
+        <div class="cloud-icon">☁</div>
+        <div class="ring ring1"></div><div class="ring ring2"></div>
+        <div class="floating-card card1">⚡ Fast & Scalable</div>
+        <div class="floating-card card2">🔒 Secure</div>
+        <div class="floating-card card3">🌐 Anywhere Access</div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">WHY CLOUD?</p>
+        <h2>One platform, endless possibilities.</h2>
+        <p>Cloud technology helps people and organizations access computing resources without depending completely on local infrastructure.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="icon">⚡</div><h3>Scalable</h3><p>Resources can be increased or reduced according to application requirements.</p></article>
+        <article class="feature-card"><div class="icon">🌍</div><h3>Accessible</h3><p>Access applications and data from different devices through the Internet.</p></article>
+        <article class="feature-card"><div class="icon">🛡️</div><h3>Reliable</h3><p>Cloud infrastructure supports availability, backup and recovery capabilities.</p></article>
+        <article class="feature-card"><div class="icon">💰</div><h3>Cost Efficient</h3><p>Reduce the need to purchase and maintain large amounts of physical hardware.</p></article>
+      </div>
+    </section>
+
+    <section id="models" class="section models">
+      <div class="section-heading">
+        <p class="eyebrow">CLOUD MODELS</p>
+        <h2>Understand the building blocks.</h2>
+        <p>Click a card to learn the basic idea behind each service model.</p>
+      </div>
+      <div class="model-grid">
+        <button class="model-card" data-title="IaaS" data-text="Infrastructure as a Service provides virtualized computing resources such as servers, storage and networking."><span>01</span><h3>IaaS</h3><p>Infrastructure as a Service</p><b>Learn more →</b></button>
+        <button class="model-card" data-title="PaaS" data-text="Platform as a Service provides a managed environment for developers to build, test and deploy applications."><span>02</span><h3>PaaS</h3><p>Platform as a Service</p><b>Learn more →</b></button>
+        <button class="model-card" data-title="SaaS" data-text="Software as a Service delivers ready-to-use software applications over the Internet, usually through a browser."><span>03</span><h3>SaaS</h3><p>Software as a Service</p><b>Learn more →</b></button>
+      </div>
+    </section>
+
+    <section id="about" class="cta">
+      <div>
+        <p class="eyebrow">CLOUDSPACE PROJECT</p>
+        <h2>From a local file to the cloud.</h2>
+        <p>This student project demonstrates how a simple web application can be created with HTML, CSS and JavaScript and then hosted on a cloud platform.</p>
+      </div>
+      <a class="btn primary" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">Back to top ↑</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>☁ CloudSpace</p>
+    <span>Created as a Cloud Computing practical project</span>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="close" id="closeModal">×</button>
+      <p class="eyebrow">CLOUD CONCEPT</p>
+      <h2 id="modalTitle"></h2>
+      <p id="modalText"></p>
+      <button class="btn primary" id="modalOk">Got it</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
